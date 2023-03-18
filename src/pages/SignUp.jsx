@@ -10,7 +10,7 @@ const SignUp = () => {
     const navigate=useNavigate()
 
     const handleSubmit= async (e)=>{
-        email.preventDefault()
+        e.preventDefault()
         try {
             await signUp(email,password)
             navigate("/")
